@@ -53,16 +53,7 @@ class OmniGenPipeline:
         self.vae = vae
         self.model = model
         self.processor = processor
-        self.device = device
-
-        if device is None:
-            if torch.cuda.is_available():
-                self.device = torch.device("cuda")
-            elif torch.backends.mps.is_available():
-                self.device = torch.device("mps")
-            else:
-                logger.info("Don't detect any available GPUs, using CPU instead, this may take long time to generate image!!!")
-                self.device = torch.device("cpu")
+        self.device = "cuda"
 
         # self.model.to(torch.bfloat16)
         self.model.eval()
