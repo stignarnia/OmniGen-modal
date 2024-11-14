@@ -9,10 +9,9 @@ import spaces
 from OmniGen import OmniGenPipeline
 
 pipe = OmniGenPipeline.from_pretrained(
-    "Shitao/OmniGen-v1"
+    "/Models"
 )
 
-@spaces.GPU(duration=180)
 def generate_image(text, img1, img2, img3, height, width, guidance_scale, img_guidance_scale, inference_steps, seed, separate_cfg_infer, offload_model,
             use_input_image_size_as_output, max_input_image_size, randomize_seed, save_images):
     input_images = [img1, img2, img3]
@@ -425,7 +424,8 @@ with gr.Blocks() as demo:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run the OmniGen')
     parser.add_argument('--share', action='store_true', help='Share the Gradio app')
+    parser.add_argument('--host', action='store_true', help='Select the host')
     args = parser.parse_args()
 
     # launch
-    demo.launch(share=args.share)
+    demo.launch(share=args.share,server_name=args.host)
