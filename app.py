@@ -424,8 +424,7 @@ with gr.Blocks() as demo:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run the OmniGen')
     parser.add_argument('--share', action='store_true', help='Share the Gradio app')
-    parser.add_argument('--host', action='store_true', help='Select the host')
     args = parser.parse_args()
 
     # launch
-    demo.launch(share=args.share,server_name=args.host)
+    demo.launch(share=args.share,server_name="0.0.0.0")
