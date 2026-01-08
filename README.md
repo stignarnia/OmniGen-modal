@@ -31,14 +31,16 @@
     <p>
 </h4>
 
-
-
 ## 1. News
-- 2024-12-14:🚀️🚀️Open-source [X2I Dataset](https://huggingface.co/collections/yzwang/x2i-dataset-674c66d1d700f7f816a9590d)
-- 2024-11-03:✨✨Added Replicate Demo and API: [![Replicate](https://replicate.com/chenxwh/omnigen/badge)](https://replicate.com/chenxwh/omnigen)
-- 2024-10-28:✨✨We release new version of inference code, optimizing the memory usage and time cost. You can refer to [docs/inference.md](docs/inference.md#requiremented-resources) for detailed information.
-- 2024-10-22:🔥🔥We release the code for OmniGen. Inference: [docs/inference.md](docs/inference.md) Train: [docs/fine-tuning.md](docs/fine-tuning.md) 
-- 2024-10-22:🔥🔥We release the first version of OmniGen. Model Weight: [Shitao/OmniGen-v1](https://huggingface.co/Shitao/OmniGen-v1) HF Demo: [🤗](https://huggingface.co/spaces/Shitao/OmniGen)  
+
+- 2025-06-16: 🔥🔥OmniGen2 is released at https://github.com/VectorSpaceLab/OmniGen2. Welcome to use and give some feedback.
+- 2025-02-12: 🔥🔥OmniGen is available in [Diffusers](https://huggingface.co/docs/diffusers/main/en/using-diffusers/omnigen). 
+- 2024-12-14: 🚀️🚀Open-source [X2I Dataset](https://huggingface.co/collections/yzwang/x2i-dataset-674c66d1d700f7f816a9590d)
+- 2024-11-03: Added Replicate Demo and API: [![Replicate](https://replicate.com/chenxwh/omnigen/badge)](https://replicate.com/chenxwh/omnigen)
+- 2024-10-28: We release a new version of inference code, optimizing the memory usage and time cost. You can refer to [docs/inference.md](docs/inference.md#requiremented-resources) for detailed information.
+- 2024-10-22: We release the code for OmniGen. Inference: [docs/inference.md](docs/inference.md) Train: [docs/fine-tuning.md](docs/fine-tuning.md) 
+- 2024-10-22: We release the first version of OmniGen. Model Weight: [Shitao/OmniGen-v1](https://huggingface.co/Shitao/OmniGen-v1) HF Demo: [🤗](https://huggingface.co/spaces/Shitao/OmniGen)  
+- 2024-09-17: ⚡️⚡️We release the first OmniGen Report: [ArXiv](https://arxiv.org/abs/2409.11340)  
 
 
 ## 2. Overview
@@ -137,7 +139,7 @@ images[0].save("example_ti2i.png")  # save output PIL image
 
 ### Using Diffusers
 
-Coming soon.
+[Diffusers docs](https://huggingface.co/docs/diffusers/main/en/using-diffusers/omnigen)
 
 
 ### Gradio Demo
